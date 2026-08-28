@@ -1,0 +1,14 @@
+{
+  "revenue_leakage": {
+    "title": "Find recoverable revenue",
+    "prompt": "Find all potentially recoverable revenue from the last 30 days. Investigate failed payments, abandoned high-value orders, unpaid invoices, and refund anomalies. Rank opportunities by recoverable value and confidence. Do not execute any action without my approval."
+  },
+  "failed_payments": {
+    "title": "Recover failed payments",
+    "prompt": "Find failed payments with the highest recovery potential. Use customer history, amount, failure reason, and payment attempts to prioritize recovery cases. Do not execute recovery actions without approval."
+  },
+  "refund_anomalies": {
+    "title": "Investigate refund anomalies",
+    "prompt": "Find potentially anomalous refunds, especially duplicates. Quantify the value at risk and recommend which cases should be reviewed by finance."
+  }
+}

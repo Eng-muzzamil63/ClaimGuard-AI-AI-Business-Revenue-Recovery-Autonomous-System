@@ -1,0 +1,300 @@
+{
+  "company": {
+    "name": "Northstar Commerce",
+    "period": "2026-08",
+    "currency": "USD"
+  },
+  "transactions": [
+    {
+      "id": "TX-1001",
+      "customer_id": "C-101",
+      "order_id": "O-5001",
+      "amount": 4800,
+      "status": "failed",
+      "failure_reason": "expired_card",
+      "date": "2026-08-02",
+      "attempts": 3
+    },
+    {
+      "id": "TX-1002",
+      "customer_id": "C-102",
+      "order_id": "O-5002",
+      "amount": 1250,
+      "status": "paid",
+      "failure_reason": null,
+      "date": "2026-08-03",
+      "attempts": 1
+    },
+    {
+      "id": "TX-1003",
+      "customer_id": "C-103",
+      "order_id": "O-5003",
+      "amount": 7200,
+      "status": "failed",
+      "failure_reason": "insufficient_funds",
+      "date": "2026-08-05",
+      "attempts": 2
+    },
+    {
+      "id": "TX-1004",
+      "customer_id": "C-104",
+      "order_id": "O-5004",
+      "amount": 860,
+      "status": "failed",
+      "failure_reason": "processor_timeout",
+      "date": "2026-08-07",
+      "attempts": 1
+    },
+    {
+      "id": "TX-1005",
+      "customer_id": "C-106",
+      "order_id": "O-5006",
+      "amount": 5400,
+      "status": "failed",
+      "failure_reason": "expired_card",
+      "date": "2026-08-12",
+      "attempts": 2
+    },
+    {
+      "id": "TX-1006",
+      "customer_id": "C-107",
+      "order_id": "O-5007",
+      "amount": 9100,
+      "status": "failed",
+      "failure_reason": "insufficient_funds",
+      "date": "2026-08-14",
+      "attempts": 2
+    },
+    {
+      "id": "TX-1007",
+      "customer_id": "C-110",
+      "order_id": "O-5010",
+      "amount": 2950,
+      "status": "failed",
+      "failure_reason": "expired_card",
+      "date": "2026-08-21",
+      "attempts": 3
+    }
+  ],
+  "orders": [
+    {
+      "id": "O-5011",
+      "customer_id": "C-111",
+      "amount": 8900,
+      "status": "abandoned",
+      "created": "2026-08-04",
+      "items": 6
+    },
+    {
+      "id": "O-5012",
+      "customer_id": "C-112",
+      "amount": 3200,
+      "status": "abandoned",
+      "created": "2026-08-06",
+      "items": 3
+    },
+    {
+      "id": "O-5013",
+      "customer_id": "C-113",
+      "amount": 740,
+      "status": "abandoned",
+      "created": "2026-08-08",
+      "items": 1
+    },
+    {
+      "id": "O-5014",
+      "customer_id": "C-114",
+      "amount": 6100,
+      "status": "abandoned",
+      "created": "2026-08-11",
+      "items": 5
+    },
+    {
+      "id": "O-5016",
+      "customer_id": "C-116",
+      "amount": 5200,
+      "status": "abandoned",
+      "created": "2026-08-16",
+      "items": 4
+    }
+  ],
+  "invoices": [
+    {
+      "id": "INV-9001",
+      "customer_id": "C-201",
+      "amount": 8900,
+      "status": "unpaid",
+      "due_date": "2026-08-01",
+      "days_overdue": 27
+    },
+    {
+      "id": "INV-9002",
+      "customer_id": "C-203",
+      "amount": 3100,
+      "status": "unpaid",
+      "due_date": "2026-08-10",
+      "days_overdue": 18
+    },
+    {
+      "id": "INV-9003",
+      "customer_id": "C-204",
+      "amount": 1750,
+      "status": "unpaid",
+      "due_date": "2026-08-15",
+      "days_overdue": 13
+    },
+    {
+      "id": "INV-9004",
+      "customer_id": "C-205",
+      "amount": 560,
+      "status": "unpaid",
+      "due_date": "2026-08-20",
+      "days_overdue": 8
+    }
+  ],
+  "refunds": [
+    {
+      "id": "REF-7001",
+      "order_id": "O-5201",
+      "customer_id": "C-301",
+      "amount": 2100,
+      "reason": "duplicate",
+      "created": "2026-08-04",
+      "status": "completed"
+    },
+    {
+      "id": "REF-7002",
+      "order_id": "O-5202",
+      "customer_id": "C-302",
+      "amount": 850,
+      "reason": "customer_request",
+      "created": "2026-08-06",
+      "status": "completed"
+    },
+    {
+      "id": "REF-7003",
+      "order_id": "O-5203",
+      "customer_id": "C-303",
+      "amount": 1900,
+      "reason": "duplicate",
+      "created": "2026-08-07",
+      "status": "completed"
+    },
+    {
+      "id": "REF-7004",
+      "order_id": "O-5205",
+      "customer_id": "C-305",
+      "amount": 2320,
+      "reason": "duplicate",
+      "created": "2026-08-10",
+      "status": "completed"
+    }
+  ],
+  "customers": [
+    {
+      "id": "C-101",
+      "name": "Northstar Labs",
+      "segment": "Enterprise",
+      "lifetime_value": 38200,
+      "payment_history": 17,
+      "recovery_probability": 0.88
+    },
+    {
+      "id": "C-103",
+      "name": "Vertex Retail",
+      "segment": "Mid-market",
+      "lifetime_value": 12800,
+      "payment_history": 6,
+      "recovery_probability": 0.64
+    },
+    {
+      "id": "C-106",
+      "name": "BluePeak",
+      "segment": "Enterprise",
+      "lifetime_value": 44100,
+      "payment_history": 21,
+      "recovery_probability": 0.91
+    },
+    {
+      "id": "C-107",
+      "name": "Aster Systems",
+      "segment": "Enterprise",
+      "lifetime_value": 29500,
+      "payment_history": 13,
+      "recovery_probability": 0.76
+    },
+    {
+      "id": "C-110",
+      "name": "Nova Works",
+      "segment": "Mid-market",
+      "lifetime_value": 9400,
+      "payment_history": 5,
+      "recovery_probability": 0.71
+    },
+    {
+      "id": "C-111",
+      "name": "Orbit Commerce",
+      "segment": "Enterprise",
+      "lifetime_value": 27600,
+      "payment_history": 11,
+      "recovery_probability": 0.83
+    },
+    {
+      "id": "C-112",
+      "name": "Mosaic Co",
+      "segment": "SMB",
+      "lifetime_value": 7200,
+      "payment_history": 4,
+      "recovery_probability": 0.58
+    },
+    {
+      "id": "C-114",
+      "name": "Pioneer Group",
+      "segment": "Enterprise",
+      "lifetime_value": 31200,
+      "payment_history": 9,
+      "recovery_probability": 0.79
+    },
+    {
+      "id": "C-116",
+      "name": "Atlas Media",
+      "segment": "Mid-market",
+      "lifetime_value": 11400,
+      "payment_history": 7,
+      "recovery_probability": 0.67
+    },
+    {
+      "id": "C-201",
+      "name": "Cedar Health",
+      "segment": "Enterprise",
+      "lifetime_value": 24700,
+      "payment_history": 15,
+      "recovery_probability": 0.81
+    },
+    {
+      "id": "C-203",
+      "name": "Delta Works",
+      "segment": "Mid-market",
+      "lifetime_value": 10300,
+      "payment_history": 5,
+      "recovery_probability": 0.62
+    },
+    {
+      "id": "C-204",
+      "name": "Kite Systems",
+      "segment": "SMB",
+      "lifetime_value": 5200,
+      "payment_history": 3,
+      "recovery_probability": 0.49
+    },
+    {
+      "id": "C-205",
+      "name": "Harbor Studio",
+      "segment": "SMB",
+      "lifetime_value": 2800,
+      "payment_history": 2,
+      "recovery_probability": 0.41
+    }
+  ],
+  "action_history": []
+}
